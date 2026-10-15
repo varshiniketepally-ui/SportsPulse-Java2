@@ -1,0 +1,27 @@
+--- DOSSIER START ---
+ID: DOS-03
+MATCH_ID: MATCH-102
+TITLE: Performance Dossier: Munich Dynamos Pressing Masterclass
+AUTHOR: Performance Director Wolfgang Meyer
+TACTICAL: Munich Dynamos applied relentless zonal pressing from the opening whistle. Declan Rice fought admirably but was isolated.
+SCOUT: Harry Kane showed exceptional spatial awareness and spatial intelligence, dropping deep to link midfield transitions.
+TAKEAWAYS: Physical stamina depletion in second half doomed London Strikers to heavy defeat. Tactical discipline remained solid.
+--- DOSSIER END ---
+--- DOSSIER START ---
+ID: DOS-02
+MATCH_ID: MATCH-101
+TITLE: Tactical Scouting Dossier: Madrid Royals Structural Flaws
+AUTHOR: Tactical Scout Jean-Luc Picard
+TACTICAL: Madrid Royals suffered from counter-attacking vulnerability whenever their fullbacks pushed forward into attacking thirds.
+SCOUT: Antonio Rudiger aggressive challenge patterns resulted in early disciplinary caution, restricting defensive aggression later.
+TAKEAWAYS: High pressing transition from opposition exposed slow central pivot recovery. Tactical reorganization required before second leg.
+--- DOSSIER END ---
+--- DOSSIER START ---
+ID: DOS-01
+MATCH_ID: MATCH-101
+TITLE: Champions Cup Match Analysis: Apex Titans vs Madrid Royals
+AUTHOR: Chief Analyst Dr. Elena Rostova
+TACTICAL: Apex Titans displayed high pressing transition and clinical counter attack precision. Defensive overload in midfield suffocated Madrid's playmakers.
+SCOUT: Virgil Van Horn maintained superior aerial duel supremacy. Leo Sterling demonstrated lethal finishing efficiency on counter attacks.
+TAKEAWAYS: Tactical discipline and quick vertical passing created recurring defensive fractures in Madrid's backline. High stamina and low fatigue were decisive factors.
+--- DOSSIER END ---

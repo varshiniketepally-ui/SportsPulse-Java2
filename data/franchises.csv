@@ -1,0 +1,5 @@
+id,name,city,stadium,headCoach,leagueId,points,wins,draws,losses
+FRAN-04,London Strikers,London,Strikers Ground,Arthur Pendelton,LG-02,0,0,0,1
+FRAN-01,Apex Titans FC,Manchester,Titans Arena,Marcus Vance,LG-01,4,1,1,0
+FRAN-03,Munich Dynamos,Munich,Olympia Park,Hans Gruber,LG-02,3,1,0,0
+FRAN-02,Madrid Royals,Madrid,Estadio Imperial,Carlos Mendoza,LG-01,3,1,0,1

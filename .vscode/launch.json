@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SportsPulse (Interactive Console)",
+            "request": "launch",
+            "mainClass": "com.sportspulse.Main",
+            "projectName": "SportsPulse",
+            "vmArgs": "-Dfile.encoding=UTF-8",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "SportsPulse (202 Automated Tests)",
+            "request": "launch",
+            "mainClass": "com.sportspulse.SelfTest",
+            "projectName": "SportsPulse",
+            "vmArgs": "-Dfile.encoding=UTF-8",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "SportsPulse (Empirical Benchmarks)",
+            "request": "launch",
+            "mainClass": "com.sportspulse.benchmark.BenchmarkRunner",
+            "projectName": "SportsPulse",
+            "vmArgs": "-Dfile.encoding=UTF-8",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "SportsPulse (Environment Check)",
+            "request": "launch",
+            "mainClass": "com.sportspulse.EnvironmentCheck",
+            "projectName": "SportsPulse",
+            "vmArgs": "-Dfile.encoding=UTF-8",
+            "console": "integratedTerminal"
+        }
+    ]
+}

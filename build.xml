@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SportsPulse" default="jar" basedir=".">
+    <description>SportsPulse - Sports Analytics &amp; Performance Platform</description>
+
+    <property name="src.dir" location="src"/>
+    <property name="bin.dir" location="bin"/>
+    <property name="dist.dir" location="dist"/>
+    <property name="main.class" value="com.sportspulse.Main"/>
+    <property name="test.class" value="com.sportspulse.SelfTest"/>
+    <property name="bench.class" value="com.sportspulse.benchmark.BenchmarkRunner"/>
+
+    <target name="init">
+        <mkdir dir="${bin.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="runtime/logs"/>
+        <mkdir dir="runtime/reports"/>
+        <mkdir dir="runtime/benchmarks"/>
+        <mkdir dir="runtime/data"/>
+    </target>
+
+    <target name="compile" depends="init" description="Compile Java source code">
+        <javac srcdir="${src.dir}" destdir="${bin.dir}" encoding="UTF-8" includeantruntime="false" debug="true">
+            <include name="**/*.java"/>
+        </javac>
+    </target>
+
+    <target name="run" depends="compile" description="Run interactive SportsPulse application">
+        <java classname="${main.class}" classpath="${bin.dir}" fork="true">
+            <jvmarg value="-Dfile.encoding=UTF-8"/>
+        </java>
+    </target>
+
+    <target name="test" depends="compile" description="Run 202-test automated regression suite">
+        <java classname="${test.class}" classpath="${bin.dir}" fork="true">
+            <jvmarg value="-Dfile.encoding=UTF-8"/>
+        </java>
+    </target>
+
+    <target name="benchmark" depends="compile" description="Run empirical benchmarks">
+        <java classname="${bench.class}" classpath="${bin.dir}" fork="true">
+            <jvmarg value="-Dfile.encoding=UTF-8"/>
+        </java>
+    </target>
+
+    <target name="jar" depends="compile" description="Build standalone runnable JAR">
+        <jar destfile="${dist.dir}/SportsPulse.jar" basedir="${bin.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+                <attribute name="Implementation-Title" value="SportsPulse"/>
+            </manifest>
+        </jar>
+        <copy file="${dist.dir}/SportsPulse.jar" tofile="SportsPulse.jar" overwrite="true"/>
+        <echo message="JAR built successfully -> dist/SportsPulse.jar and SportsPulse.jar"/>
+    </target>
+
+    <target name="clean" description="Clean compiled class files and artifacts">
+        <delete dir="${bin.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete file="SportsPulse.jar"/>
+    </target>
+</project>

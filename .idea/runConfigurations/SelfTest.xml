@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SportsPulse (202 Automated Tests)" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.sportspulse.SelfTest" />
+    <module name="SportsPulse" />
+    <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
